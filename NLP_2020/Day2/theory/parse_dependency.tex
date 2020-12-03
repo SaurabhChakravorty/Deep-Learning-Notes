@@ -1,0 +1,16 @@
+\documentclass{standalone}
+% In the preamble:
+\usepackage{tikz-dependency}
+
+% In the document:
+\begin{document}
+\begin{dependency}[theme = simple]
+   \begin{deptext}[column sep=1em]
+      the \& students \& love \& their \& professors \\
+   \end{deptext}
+   \depedge{2}{1}{}
+   \depedge{3}{2}{}
+   \depedge{3}{5}{}
+   \depedge{5}{4}{}
+\end{dependency}
+\end{document}
